@@ -1,0 +1,91 @@
+2022-06-16T01:37:37+00:00 CRITICAL Uncaught ArgumentCountError: get_headers() expects at least 1 argument, 0 given in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:2
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php(2): get_headers()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#4 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 2
+
+2022-06-16T01:49:06+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:7
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 7
+
+2022-06-16T01:49:24+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:7
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 7
+
+2022-06-16T01:51:24+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:7
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 7
+
+2022-06-16T01:51:51+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:7
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 7
+
+2022-06-16T01:54:19+00:00 CRITICAL Uncaught Error: Call to undefined function WP_Query() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:6
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 6
+
+2022-06-16T02:31:55+00:00 CRITICAL syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 31
+
+2022-06-16T02:32:08+00:00 CRITICAL syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 31
+
+2022-06-16T02:32:20+00:00 CRITICAL syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 31
+
+2022-06-16T02:32:33+00:00 CRITICAL syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 29
+
+2022-06-16T02:32:35+00:00 CRITICAL syntax error, unexpected token ")" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 29
+
+2022-06-16T04:23:42+00:00 CRITICAL syntax error, unexpected variable "$tieu_de_2" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 78
+
+2022-06-16T04:25:31+00:00 CRITICAL Uncaught Error: Undefined constant "tieu_de_2" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:102
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 102
+
+2022-06-16T04:45:48+00:00 CRITICAL Uncaught Error: Undefined constant "tieu_de_2" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:102
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 102
+
+2022-06-16T04:45:51+00:00 CRITICAL Uncaught Error: Undefined constant "tieu_de_2" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:102
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 102
+
+2022-06-16T09:07:25+00:00 CRITICAL syntax error, unexpected variable "$category_img" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 134
+
+2022-06-16T09:07:32+00:00 CRITICAL syntax error, unexpected variable "$category_img" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 134
+
+2022-06-16T09:15:49+00:00 CRITICAL syntax error, unexpected variable "$category_img" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 134
+
