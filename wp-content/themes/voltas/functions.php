@@ -208,4 +208,34 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+?>
+
+<?php  // <~ don't add me in
+
+add_shortcode ('woo_cart_but', 'woo_cart_but' );
+/**
+ * Create Shortcode for WooCommerce Cart Menu Item
+ */
+function woo_cart_but() {
+	ob_start();
+ 
+        $cart_count = WC()->cart->cart_contents_count; // Set variable for cart item count
+        $cart_url = wc_get_cart_url();  // Set Cart URL
+  
+        ?>
+        <a href="<?php echo $cart_url; ?>">
+	    <?php
+        if ( $cart_count > 0 ) {
+       ?>
+            <span class="cart-contents-count"><?php echo $cart_count; ?> Items</span>
+        <?php
+        }
+        ?>
+        </a>
+        <?php
+	        
+    return ob_get_clean();
+ 
+}
+?>
 

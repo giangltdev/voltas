@@ -66,7 +66,7 @@
                                     <li><a href="#">sing in</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="frontIcon icon-ShoppingCart"></i>5 Items</a></li>
+                            <li><a href="<?php echo wc_get_cart_url(); ?>"><i class="frontIcon icon-ShoppingCart"></i><?php echo do_shortcode("[woo_cart_but]"); ?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-5">
                     <div class="topLanguangeSearch clearfix">
-                        <form method="post">
+                        <form action="<?php echo get_home_url(); ?>/" method="get">
                             <input type="text" name="s" id="s" placeholder="Search" />
                         </form>
                        <!--  <div class="langMenu">
