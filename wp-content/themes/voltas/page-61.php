@@ -225,6 +225,10 @@
         </div>
     </section>
 
+    <div class="container">
+        <?php echo do_shortcode("[recent_products per_page='1']"); ?>
+    </div>
+
 
 <?php
     get_footer(); 
