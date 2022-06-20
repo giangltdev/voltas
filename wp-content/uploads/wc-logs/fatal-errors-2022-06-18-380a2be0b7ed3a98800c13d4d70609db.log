@@ -1,0 +1,21 @@
+2022-06-18T02:29:49+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_get_product() in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1368
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/class-wp-hook.php(307): woocommerce_template_loop_product_thumbnail('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/woocommerce/content-product.php(42): do_action('woocommerce_bef...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template.php(772): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/Applications/X...', false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-products.php(660): wc_get_template_part('content', 'product')
+#7 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-products.php(100): WC_Shortcode_Products->product_loop()
+#8 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(259): WC_Shortcode_Products->get_content()
+#9 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/shortcodes.php(356): WC_Shortcodes::recent_products(Array, '', 'recent_products')
+#10 [internal function]: do_shortcode_tag(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(recent...', 'do_shortcode_ta...', '[recent_product...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php(229): do_shortcode('[recent_product...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include('/Applications/X...')
+#14 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#15 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#16 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/plugins/woocommerce/includes/wc-template-functions.php on line 1368
+

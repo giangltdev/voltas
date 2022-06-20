@@ -208,6 +208,9 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+add_image_size( 'canxem-medium', 400, 550, true );
+
 ?>
 
 <?php  // <~ don't add me in
@@ -238,4 +241,6 @@ function woo_cart_but() {
  
 }
 ?>
+
+
 
