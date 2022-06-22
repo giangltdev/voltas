@@ -1,0 +1,12 @@
+2022-06-21T09:36:22+00:00 CRITICAL Unmatched '}' in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 346
+
+2022-06-21T15:41:33+00:00 CRITICAL Uncaught Error: Undefined constant "_" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php:374
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-includes/template-loader.php(106): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-blog-header.php(19): require_once('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/voltas/index.php(17): require('/Applications/X...')
+#3 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/page-61.php on line 374
+
+2022-06-21T15:53:55+00:00 CRITICAL syntax error, unexpected identifier "register_sidebar" in /Applications/XAMPP/xamppfiles/htdocs/voltas/wp-content/themes/voltas/functions.php on line 317
+

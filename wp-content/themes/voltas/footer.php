@@ -8,24 +8,43 @@
  *
  * @package voltas
  */
-
 ?>
+<!-- li#custom_html-4 {
+    list-style-type: none;
+} -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'voltas' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'voltas' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'voltas' ), 'voltas', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 col-xs-12 noPaddingRight">
+                    <aside class="widget">
+                        
+                            <?php dynamic_sidebar('widget_1'); ?>
+                       
+                    </aside>
+                </div>
+                <div class="clearfix hidden-lg hidden-md hidden-sm"></div>
+                <div class="col-lg-6 col-sm-5 col-xs-12">
+                    <aside class="widget">
+                        <div class="footerLogo text-center">
+                            <a href="index-2.html"><img src="images/footerLogo.png" alt="" /></a>
+                        </div>
+                        <?php dynamic_sidebar('widget_2'); ?>
+
+                        <?php dynamic_sidebar('widget_3'); ?>
+                        
+                        <?php dynamic_sidebar('widget_5'); ?>
+
+                    </aside>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-12">
+                    <aside class="widget">
+                        <?php dynamic_sidebar('widget_4'); ?>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

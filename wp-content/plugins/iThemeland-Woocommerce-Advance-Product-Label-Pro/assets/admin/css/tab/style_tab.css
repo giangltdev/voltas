@@ -1,0 +1,50 @@
+
+/* -------------------------------- 
+
+Responsive Tabbed Navigation
+
+-------------------------------- */
+span.icon-nav.dashicons {
+  margin-top: 13px;
+}
+.it-unique-tab.nav-tab-wrapper{
+  margin: 0 ;
+  padding-top: 9px;
+  line-height: inherit;
+  border:0px!important;
+}
+.it-unique-tab .nav-tab {
+  margin-left: 0px !important;
+  border: 0px !important;
+}
+.it-unique-tab .nav-tab-active, .it-unique-tab .nav-tab-active:focus, .it-unique-tab .nav-tab-active:focus:active, .it-unique-tab .nav-tab-active:hover, .it-unique-tab .nav-tab:focus, .it-unique-tab .nav-tab:hover {
+  background-color: rgba(233, 230, 202, 0.3)!important;
+  color: #000;
+  -webkit-box-shadow: inset 0 3px 0 #172b4d!important;
+  box-shadow: inset 0 3px 0 #172b4d!important;
+  border-bottom: 0px !important;
+
+}
+.it-unique-tab .nav-tab{
+  background: #eef1fd!important;
+  height: 45px;
+  width: 108px;
+  text-align: center;
+  line-height: 45px;
+}
+.it-unique-tab .nav-tab.nav-tab-active{
+  background: #ffffff!important;
+  margin-bottom: 0px;
+}
+
+div.wrap.it_unique_wrap div.tab-content {
+  background: rgb(255, 255, 255);
+  padding: 17px 10px;
+}
+/*single*/
+.woocommerce_options_panel .it-unique-tab .nav-tab{
+  width: 118px;
+}
+li.labels_pro_options.labels_pro_tab.it-woocommerce-advanced-product-labels-pro > a:before{
+  content: '\f313'!important;
+}

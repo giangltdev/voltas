@@ -45,12 +45,44 @@ if ( ! defined( '_S_VERSION' ) ) {
  * as indicating support for post thumbnails.
  */
 function voltas_setup() {
-
-
+	
 	/*
 		Kích hoạt tính năng woocommerce nếu cần
 	*/
 		add_theme_support('woocommerce');
+
+
+	/** Xu ly link sidebar them widget**/
+
+	$widget_1 = array(
+		'id' => 'widget_1',
+		'name' => __('Quick link','textdomain')
+	);
+	$widget_2 = array(
+		'id' => 'widget_2',
+		'name' => __('Social')
+	);
+	$widget_3 = array(
+		'id' => 'widget_3',
+		'name' => __('Bank')
+	);
+	$widget_4 = array(
+		'id' => 'widget_4',
+		'name' => __('Locaiton')
+	);
+
+	$widget_5 = array(
+		'id' => 'widget_5',
+		'name' => __('Copyrights')
+	);
+
+
+	register_sidebar($widget_1 );
+	register_sidebar($widget_2 );
+	register_sidebar($widget_3 );
+	register_sidebar($widget_4 );
+	register_sidebar($widget_5 );
+
 
 
 	/*
@@ -208,9 +240,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-?>
 
-<?php  // <~ don't add me in
+
+
+/** Xử lý add to card đếm số lượng sản phẩm trong giỏ hàng **/
 
 add_shortcode ('woo_cart_but', 'woo_cart_but' );
 /**
@@ -237,5 +270,90 @@ function woo_cart_but() {
     return ob_get_clean();
  
 }
+
+/** Thêm class cho nút add to card **/
+function woocommerce_template_loop_add_to_cart( $args = array() ) {
+	global $product;
+
+	if ( $product ) {
+		$defaults = array(
+			'quantity'   => 1,
+			'class'      => 'vol_btn vol_btn_bg',
+			'attributes' => array(
+				'data-product_id'  => $product->get_id(),
+				'data-product_sku' => $product->get_sku(),
+				'aria-label'       => $product->add_to_cart_description(),
+				'rel'              => 'nofollow',
+			),
+		);
+
+		$args = apply_filters( 'woocommerce_loop_add_to_cart_args', wp_parse_args( $args, $defaults ), $product );
+
+		if ( isset( $args['attributes']['aria-label'] ) ) {
+			$args['attributes']['aria-label'] = wp_strip_all_tags( $args['attributes']['aria-label'] );
+		}
+
+		wc_get_template( 'loop/add-to-cart.php', $args );
+	}
+}
+
+/** Chỉnh sửa tiêu đề sản phẩm **/
+function woocommerce_template_loop_product_title() {
+	global $product;
+	$link = apply_filters( 'woocommerce_loop_product_link', get_the_permalink(), $product );
+	echo '<h5> <a class="poppins" href="'. esc_url( $link ) .'">' . get_the_title() . '</a></h5>';
+}
+
+/** Lấy danh mục sản phẩm **/
+function themdanhmuc() {
+	global $product;
+	$categories = wp_get_post_terms( $product->get_id(),'product_cat');
+
+	foreach ($categories as $category) {
+	echo ' <p class="cats">' . $category->name . '</p>';
+	}	
+
+}
+add_action('woocommerce_shop_loop_item_title','themdanhmuc',20);
+
+
+
+/** Xử lý nut giỏ hàng đã hết hàng hay chưa nếu hết đề hết hàng**/
+
+function kiem_tra( $args = array() ) {
+		global $product;
+		if(!$product->is_in_stock()) {
+			echo '<div class="productHover01"><a class="vol_btn vol_btn_bg">Hết hàng</a></div>';
+		}
+		elseif ( $product ) {
+			$defaults = array(
+				'quantity'   => 1,
+				'class'      => 'vol_btn vol_btn_bg',
+			);
+
+			$args = apply_filters( 'woocommerce_loop_add_to_cart_args', wp_parse_args( $args, $defaults ), $product );
+
+			if ( isset( $args['attributes']['aria-label'] ) ) {
+				$args['attributes']['aria-label'] = wp_strip_all_tags( $args['attributes']['aria-label'] );
+			}
+
+			wc_get_template( 'loop/add-to-cart.php', $args );
+		}
+	}
+
+	remove_action( 'woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart',10);
+	add_action('woocommerce_after_shop_loop_item','kiem_tra',10)
+
+
+
+
 ?>
+
+
+
+
+
+
+
+
 
